@@ -1,98 +1,368 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-   
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-
-li, a {
-    list-style: none;
-    text-decoration: none;
-    color: black;
-    letter-spacing: 1px;
-    
+li,
+a {
+  list-style: none;
+  text-decoration: none;
+  color: black;
+  letter-spacing: 1px;
 }
 
 header {
-    background: #1b1a17;
-    height: 60px;
-    width: 100%;
-   
+  background: #1b1a17;
+  background: hsl(210deg 30% 8%);
+  height: 100px;
+  width: 100%;
 }
 
 label.logo {
-   color: white;
-   font-size: 35px;
-   font-weight: bold;
-   line-height: 60px;
-   padding: 0 100px;
+  color: #ccae62;
+  color: whitesmoke;
+  opacity: 0.7;
+  font-size: 35px;
+  font-weight: bold;
+  line-height: 90px;
+  padding: 0 100px;
+  margin-left: 100px;
+  font-family: "DM Serif Display", serif;
 }
 
 header ul {
-    float: right;
-    margin-right: 75px;
+  float: right;
+  margin-right: 200px;
+  margin-top: 50px;
 }
 
 header ul li {
-    display: inline-block;
-    line-height: 60px;
-    padding: 0 10px;
-    
+  margin-top: 0;
+  padding: 0 10px;
+  float: right;
+  margin-left: 12px;
+  line-height: 2px;
 }
 
 header ul li a {
-    color: white;
-    text-transform: uppercase;
-    font-family: 'RocknRoll One', sans-serif;
+  color: white;
+  text-transform: uppercase;
+  font-family: "RocknRoll One", sans-serif;
+  font-size: 17px;
 }
 
-a:hover {   
-   border-bottom: 2px solid #fbe0c4;
+a:hover {
+  border-bottom: 2px solid #fbe0c4;
 }
 
 .items {
-    padding: 70px;
-    margin-bottom: 0px;
-    font-family: 'RocknRoll One', sans-serif;
-    letter-spacing: 1px;  
-    min-height: 100vh;
-    color: white;
-    font-size: 40px;
-    background-image: url("https://p0.pikist.com/photos/480/818/web-design-coding-web-developing-macbook-wooden-background-book-coffee-web-banner-geek.jpg");
-    background-repeat: no-repeat;
-    background-size: cover ;
+  display: flex;
+  justify-content: center;
+  padding: 70px;
+  margin-bottom: 0px;
+  font-family: "RocknRoll One", sans-serif;
+  letter-spacing: 1px;
+  min-height: 100vh;
+  color: white;
+  font-size: 40px;
+  background: hsl(210deg 30% 8%);
+  width: 100%;
+}
+
+.pic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 200px;
+  width: 50%;
+  height: 55vh;
+  border-radius: 50%;
+}
+
+.dates {
+  display: flex;
+  height: 300px;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
 }
 
 h1 {
-    font-size: 60px;
-    color: wheat;
-    margin-left: 70px;
+  font-size: 50px;
+  color: wheat;
+  margin-left: 75px;
+}
+
+h3 {
+  font-size: 30px;
+  color: whitesmoke;
+  margin-left: 75px;
+  line-height: 30px;
 }
 
 p {
-    font-size: 30px;
-    color: whitesmoke;
-    margin-left: 70px;
+  font-size: 16px;
+  margin-left: 70px;
+  margin-top: 15px;
+  width: 50%;
 }
 
-button {
-    height: 45px;
-    width: 220px;
-    border-radius: 10px;
-    background: #eeb76b;
+.btn-home {
+  width: 50%;
+  border-radius: 15px;
+  background: #eeb76b;
+  text-align: center;
+  margin-top: 30px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px;
+  margin-left: 70px;
+}
+
+.btn-home:hover {
+  background: #ffe268;
+}
+
+.aboutme {
+  width: 100%;
+  min-height: 100vh;
+  background: hsl(210deg 38% 15%);
+  color: wheat;
+  text-align: center;
+  font-size: 40px;
+  font-family: "RocknRoll One", sans-serif;
+}
+
+.top {
+  padding: 15px 0px;
+}
+
+.abmdescription {
+  font-family: "RocknRoll One", sans-serif;
+  text-align: center;
+  margin-left: 10px;
+  margin-top: 15px;
+  height: 200px;
+  width: 100%;
+  padding: 0 300px;
+}
+
+.skills {
+  text-align: center;
+  color: wheat;
+  width: 100%;
+  min-height: 100vh;
+  font-size: 30px;
+  font-family: "RocknRoll One", sans-serif;
+  margin-top: 0;
+  background: hsl(210deg 38% 15%);
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+.cards-list {
+  z-index: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 0 100px;
+}
+
+.card {
+  margin: 30px auto;
+  width: 300px;
+  height: 300px;
+  border-radius: 40px;
+  box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25),
+    -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.card .card_image {
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
+}
+
+.card .card_image img {
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
+  object-fit: cover;
+}
+
+.card .card_title {
+  text-align: center;
+  border-radius: 0px 0px 40px 40px;
+  font-family: "RocknRoll One", sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: -80px;
+  height: 40px;
+  color: #1b1a17;
+  letter-spacing: 1px;
+}
+
+.card:hover {
+  transform: scale(0.9, 0.9);
+  box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25),
+    -5px -5px 30px 15px rgba(0, 0, 0, 0.22);
+}
+
+.title-white {
+  color: white;
+}
+
+.title-black {
+  color: black;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (min-width: 320px) and (max-width: 1220px) {
+  .checkbtn {
+    display: block;
+  }
+
+  label.logo {
+    font-size: 25px;
+    margin-left: 0px;
+    position: absolute;
+    margin-top: -10px;
+  }
+
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: hsl(210deg 70% 12%);
+    top: 80px;
+    left: -100%;
     text-align: center;
-    margin-top: 30px;
-    cursor: pointer;   
-    letter-spacing: 1px;
-    float: left;
-    border: 4px solid #eeb76b;
-    font-size: 16px;
-    font-weight: 500;
-    margin-left: 70px;
+    transition: all 0.5s;
+  }
+
+  header ul li {
+    display: block;
+    width: 100%;
+    margin: 50px 0;
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
+
+  header ul li a {
+    font-size: 15px;
+  }
+
+  a:hover,
+  a.active {
+    background: none;
+    color: #fbe0c4;
+  }
+
+  #check:checked ~ ul {
+    left: 0;
+  }
+
+  #check {
+    display: block;
+  }
+
+  .items {
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+    justify-content: center;
+    padding: 15px;
+  }
+
+  .pic {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 0;
+    padding: 20px;
+  }
+
+  .dates {
+    font-size: 5px;
+    margin-left: 0;
+    display: flex;
+    flex-flow: column nowrap;
+    min-height: 80vh;
+    width: 100%;
+  }
+
+  .dates h1 {
+    font-size: 40px;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+  }
+
+  .dates h3 {
+    font-size: 25px;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .dates p {
+    font-size: 15px;
+    width: 100%;
+    margin: 0;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .btn-home {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin-left: 25%;
+  }
+
+  .aboutme {
+    width: 100%;
+    min-height: 100vh;
+    font-size: 20px;
+    font-family: "RocknRoll One", sans-serif;
+    text-align: center;
+  }
+
+  .abmdescription {
+    font-family: "RocknRoll One", sans-serif;
+    padding: 0 20px;
+    margin-left: 10px;
+    font-size: 15px;
+  }
+
+  .skills {
+    font-size: 25px;
+  }
 }
 
-button:hover {
-    background: #ffc93c;
-    
-} 
+/* @media only screen and (min-width: 280px) and (max-width: 1200px) {
+  .checkbtn {
+    display: block;
+  }} */
