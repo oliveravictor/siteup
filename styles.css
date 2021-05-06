@@ -59,11 +59,11 @@ a:hover {
 .items {
   display: flex;
   justify-content: center;
-  padding: 70px;
+  padding: 40px;
   margin-bottom: 0px;
   font-family: "RocknRoll One", sans-serif;
   letter-spacing: 1px;
-  min-height: 100vh;
+  min-height: 75vh;
   color: white;
   font-size: 40px;
   background: hsl(210deg 30% 8%);
@@ -93,6 +93,10 @@ h1 {
   font-size: 50px;
   color: wheat;
   margin-left: 75px;
+}
+
+h2 {
+  font-size: 50px;
 }
 
 h3 {
@@ -138,7 +142,7 @@ p {
 }
 
 .top {
-  padding: 15px 0px;
+  padding: 20px 0px;
 }
 
 .abmdescription {
@@ -146,9 +150,9 @@ p {
   text-align: center;
   margin-left: 10px;
   margin-top: 15px;
-  height: 200px;
+  height: 150px;
   width: 100%;
-  padding: 0 300px;
+  padding: 0 350px;
 }
 
 .skills {
@@ -308,7 +312,6 @@ p {
     margin-left: 0;
     display: flex;
     flex-flow: column nowrap;
-    min-height: 80vh;
     width: 100%;
   }
 
@@ -328,7 +331,7 @@ p {
   }
 
   .dates p {
-    font-size: 15px;
+    font-size: 16px;
     width: 100%;
     margin: 0;
     margin-top: 20px;
@@ -354,15 +357,25 @@ p {
     font-family: "RocknRoll One", sans-serif;
     padding: 0 20px;
     margin-left: 10px;
-    font-size: 15px;
+    font-size: 17px;
   }
 
   .skills {
     font-size: 25px;
+    margin-top: 10px;
   }
 }
 
-/* @media only screen and (min-width: 280px) and (max-width: 1200px) {
-  .checkbtn {
-    display: block;
-  }} */
+@media only screen and (min-width: 520px) and (max-width: 1200px) {
+  .pic {
+    padding: 0 30%;
+  }
+
+  p {
+    padding: 0 30%;
+  }
+
+  .abmdescription {
+    padding: 0 20%;
+  }
+}
