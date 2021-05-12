@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=New+Tegomin&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.css">
   <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="styles.css">
   <title>Siteup</title>
@@ -25,7 +26,7 @@
     <ul>
       <li><a href="#">Contact</a></li>
       <li><a href="#aboutme">About Me</a></li>
-      <li><a href="#">Projects</a></li>
+      <li><a href="#projects">Projects</a></li>
       <li><a href="#">Home</a></li>
     </ul>
   </header>
@@ -123,7 +124,70 @@
       </div>
     </div>
   </section>
+
+
+  <section class="projects">
+    <h2 class="top" id="projects">Projects</h2>
+    <div class="blog-slider">
+      <div class="blog-slider__wrp swiper-wrapper">
+        <div class="blog-slider__item swiper-slide">
+          <div class="blog-slider__img">
+            <img src="./images/fec-sunrise.jpg" alt="">
+          </div>
+          <div class="blog-slider__content">
+            <div class="blog-slider__title">CMYK 3.0 </div>
+            <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae
+              voluptate repellendus magni illo ea animi? </div>
+            <a href="https://cmyksunrise.web.app/" target="_blank" class="blog-slider__button">VIEW PROJECT</a>
+          </div>
+        </div>
+
+        <div class="blog-slider__item swiper-slide">
+          <div class="blog-slider__img">
+            <img src="./images/futura-tienda.jpg" alt="">
+          </div>
+          <div class="blog-slider__content">
+            <div class="blog-slider__title">FUTURA TIENDA</div>
+            <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae
+              voluptate repellendus magni illo ea animi? </div>
+            <a href="https://futura-tienda.web.app" target="_blank" class="blog-slider__button">VIEW PROJECT</a>
+          </div>
+        </div>
+
+        <div class="blog-slider__item swiper-slide">
+          <div class="blog-slider__img">
+            <img src="./images/cueva-logo.jpg" alt="">
+          </div>
+          <div class="blog-slider__content">
+            <div class="blog-slider__title">CUEVA ESTUDIO</div>
+            <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae
+              voluptate repellendus magni illo ea animi? </div>
+            <a href="https://cueva-estudio.web.app" target="_blank" class="blog-slider__button">VIEW PROJECT</a>
+          </div>
+        </div>
+
+        <div class="blog-slider__item swiper-slide">
+          <div class="blog-slider__img">
+            <img src="./images/trbox.jpg" alt="">
+          </div>
+          <div class="blog-slider__content">
+            <div class="blog-slider__title">ERF SPORTS</div>
+            <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae
+              voluptate repellendus magni illo ea animi? </div>
+            <a href="https://elroundfinal.com" target="_blank" class="blog-slider__button">VIEW PROJECT</a>
+          </div>
+        </div>
+
+      </div>
+      <div class="blog-slider__pagination"></div>
+    </div>
+  </section>
+
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"></script>
+  <script type="text/javascript" src="slide.js"></script>
+
 </body>
 
 </html>
