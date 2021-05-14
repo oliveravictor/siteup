@@ -11,24 +11,26 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=New+Tegomin&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
   <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="styles.css">
-  <title>Siteup</title>
+  <link rel="icon" href="https://img.icons8.com/ios-filled/100/26e07f/code.png" type="image/png" />
+  <title>Víctor Olivera</title>
 </head>
 
 <body>
-  <header>
-    <input type="checkbox" id="check">
-    <label for="check" class="checkbtn">
+  <header class="menu">
+    <input type="checkbox" id="menuCheck">
+    <label for="menuCheck" class="menu-icon">
       <i class="fas fa-bars"></i>
+      <i class="fas fa-times"></i>
     </label>
     <label class="logo">💻 Dev-VO</label>
-    <ul>
-      <li><a href="#">Contact</a></li>
+    <ul class="menu-list">
+      <li><a href="#">Home</a></li>
       <li><a href="#aboutme">About Me</a></li>
       <li><a href="#projects">Projects</a></li>
-      <li><a href="#">Home</a></li>
+      <li><a href="#">Contact</a></li>
     </ul>
   </header>
 
@@ -37,9 +39,8 @@
     <div class="dates">
       <h1> Víctor Olivera </h1>
       <h3>Frontend Developer.</h3>
-      <p>Lorem ipsum dolor sit amet conset consectetur
-        duki ssj adipisicing elit.Debitis fugiat
-        totam accusantium? In, eum sapiente.
+      <p>At the moment I am learning React, to complete the first junior level. I like to have fun with
+        technology.
       </p>
       <button class="btn-home"><a href="https://github.com/oliveravictor" target="_blank">Hello
           World!</a></button>
@@ -48,9 +49,11 @@
 
   <section class="aboutme" id="aboutme">
     <h2 class="top">About Me</h2>
-    <p class="abmdescription">Hello World! my name is Victor, I am a frontend web developer. I had my first approach
-      to this world in 2018, when I made my first website. Two years later I realized that I always liked
-      development and code to make projects. On this path I continue to learn every day.
+    <p class="abmdescription">Hello World! my name is Victor,
+      I am a frontend web developer. Months ago I started learning
+      about JavaScript, HTML, and CSS. I also have knowledge of other
+      tools such as photoshop, wodpress, bootstrap and sass.
+      What I don't know I learn.
     </p>
     <div class="skills">
       <h2>Skills</h2>
@@ -137,8 +140,10 @@
           </div>
           <div class="blog-slider__content">
             <div class="blog-slider__title">CMYK 3.0 </div>
-            <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae
-              voluptate repellendus magni illo ea animi? </div>
+            <div class="blog-slider__text">
+              It was a team practice project in Frontend Café's CMYK 3.0 program: developing a point of sale application
+              and initial mockup.
+            </div>
             <a href="https://cmyksunrise.web.app/" target="_blank" class="blog-slider__button">VIEW PROJECT</a>
           </div>
         </div>
@@ -149,8 +154,10 @@
           </div>
           <div class="blog-slider__content">
             <div class="blog-slider__title">FUTURA TIENDA</div>
-            <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae
-              voluptate repellendus magni illo ea animi? </div>
+            <div class="blog-slider__text">
+              A website designed for Tienda Futura, with the functionality of selling products through a shopping cart
+              for stationery items and totebags.
+            </div>
             <a href="https://futura-tienda.web.app" target="_blank" class="blog-slider__button">VIEW PROJECT</a>
           </div>
         </div>
@@ -161,8 +168,10 @@
           </div>
           <div class="blog-slider__content">
             <div class="blog-slider__title">CUEVA ESTUDIO</div>
-            <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae
-              voluptate repellendus magni illo ea animi? </div>
+            <div class="blog-slider__text">
+              A web project for Cueva Estudio, an enterprise selling artisanal and contemporary jewelry, with objects
+              made in wood carving with various designs.
+            </div>
             <a href="https://cueva-estudio.web.app" target="_blank" class="blog-slider__button">VIEW PROJECT</a>
           </div>
         </div>
@@ -173,8 +182,10 @@
           </div>
           <div class="blog-slider__content">
             <div class="blog-slider__title">ERF SPORTS</div>
-            <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae
-              voluptate repellendus magni illo ea animi? </div>
+            <div class="blog-slider__text">
+              Website developed in wordpress for El Round Final, a benchmark brand in Argentine and international
+              boxing, with web positioning and Google Adsense.
+            </div>
             <a href="https://elroundfinal.com" target="_blank" class="blog-slider__button">VIEW PROJECT</a>
           </div>
         </div>
@@ -196,6 +207,11 @@
       <button class="github">
         <a href="https://github.com/oliveravictor" target="_blank">
           <i class="fab fa-github"></i>
+        </a>
+      </button>
+      <button class="gmail">
+        <a href="mailto:ovictoriox@gmail.com" target="_blank">
+          <i class="fas fa-envelope"></i>
         </a>
       </button>
     </div>

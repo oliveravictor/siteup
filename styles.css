@@ -25,7 +25,7 @@ label.logo {
   opacity: 0.7;
   font-size: 35px;
   font-weight: bold;
-  line-height: 90px;
+  line-height: 100px;
   padding: 0 100px;
   margin-left: 100px;
   font-family: "DM Serif Display", serif;
@@ -33,13 +33,13 @@ label.logo {
 
 header ul {
   float: right;
-  margin-right: 200px;
+  margin-right: 150px;
   margin-top: 50px;
 }
 
 header ul li {
   margin-top: 0;
-  padding: 0 10px;
+  padding: 0px;
   float: right;
   margin-left: 12px;
   line-height: 2px;
@@ -168,18 +168,30 @@ p {
   width: 100%;
 }
 
-.checkbtn {
-  font-size: 30px;
-  color: white;
-  float: right;
-  line-height: 80px;
-  margin-right: 40px;
-  cursor: pointer;
+#menuCheck,
+.menu-icon {
   display: none;
 }
 
-#check {
-  display: none;
+#menuCheck {
+  width: 0;
+  height: 0;
+}
+
+.menu-list {
+  list-style: none;
+  display: flex;
+}
+
+.menu-list li {
+  display: inline-block;
+  margin-right: 32px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.menu-list li:hover {
+  color: #fff;
 }
 
 .cards-list {
@@ -251,9 +263,11 @@ p {
   width: 100%;
 }
 
-.projects > h2 {
-  margin-left: 180px;
-  margin-bottom: 30px;
+.projects h2 {
+  line-height: 50px;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 50px;
 }
 
 .blog-slider {
@@ -274,6 +288,7 @@ p {
     height: 400px;
   }
 }
+
 @media screen and (max-width: 768px) {
   .blog-slider {
     min-height: 500px;
@@ -281,20 +296,24 @@ p {
     margin: 180px auto;
   }
 }
+
 @media screen and (max-height: 500px) and (min-width: 992px) {
   .blog-slider {
     height: 350px;
   }
 }
+
 .blog-slider__item {
   display: flex;
   align-items: center;
 }
+
 @media screen and (max-width: 768px) {
   .blog-slider__item {
     flex-direction: column;
   }
 }
+
 .blog-slider__item.swiper-slide-active .blog-slider__img img {
   opacity: 1;
   transition-delay: 0.3s;
@@ -446,16 +465,20 @@ p {
 
 .blog-slider__button {
   display: inline-flex;
-  background-image: linear-gradient(147deg, #0f2027 0%, #203a43 74%);
+  background: #34656d;
   padding: 15px 35px;
   border-radius: 50px;
   color: #fff;
-  text-decoration: none;
-  font-weight: 500;
+  font-weight: 400;
   justify-content: center;
   text-align: center;
   letter-spacing: 1px;
   font-size: 18px;
+}
+
+.blog-slider__button:hover {
+  background: #02475e;
+  border: 1px solid #5b8a72;
 }
 
 @media screen and (max-width: 576px) {
@@ -530,7 +553,6 @@ p {
 }
 
 footer {
-  background: #1b1717;
   background: #031520;
   color: wheat;
   height: 150px;
@@ -577,6 +599,15 @@ footer button {
   border-color: #313941;
 }
 
+.gmail {
+  background: #cdd0cb;
+  border-color: #e63c3c;
+}
+
+.fa-envelope {
+  color: #1b1a17;
+}
+
 footer button:hover {
   animation: hoverAnimation 0.8s forwards;
 }
@@ -600,18 +631,19 @@ footer button:hover {
   color: #313941;
 }
 
-/* OTHER MEDIA QUERIES */
+.gmail:hover {
+  color: #dd4848;
+}
+
+/* Other media queries */
 
 @media only screen and (min-width: 320px) and (max-width: 1220px) {
-  .checkbtn {
-    display: block;
-  }
-
   label.logo {
-    font-size: 25px;
+    font-size: 32px;
     margin-left: 0px;
     position: absolute;
-    margin-top: -10px;
+    text-align: center;
+    width: 100%;
   }
 
   ul {
@@ -629,26 +661,18 @@ footer button:hover {
     display: block;
     width: 100%;
     margin: 50px 0;
-    line-height: 30px;
+    line-height: 50px;
     margin-bottom: 20px;
   }
 
   header ul li a {
-    font-size: 15px;
+    font-size: 25px;
   }
 
   a:hover,
   a.active {
     background: none;
     color: #fbe0c4;
-  }
-
-  #check:checked ~ ul {
-    left: 0;
-  }
-
-  #check {
-    display: block;
   }
 
   .items {
@@ -737,16 +761,16 @@ footer button:hover {
   }
 
   .projects > h2 {
-    font-size: 40px;
-    margin-left: 25%;
+    font-size: 50px;
+    width: 100%;
+    text-align: center;
   }
 
   footer {
-    background: #1b1a17;
+    background: #031520;
     height: 250px;
     color: wheat;
     font-family: "RocknRoll One", sans-serif;
-    /* width: 100%; */
   }
 
   footer p {
@@ -759,9 +783,9 @@ footer button:hover {
   }
 }
 
-@media only screen and (min-width: 520px) and (max-width: 1200px) {
+@media only screen and (min-width: 520px) and (max-width: 1220px) {
   .pic {
-    padding: 0 24%;
+    padding: 0 25%;
   }
 
   .abmdescription {
@@ -775,5 +799,84 @@ footer button:hover {
     margin: 0;
     margin-top: 20px;
     text-align: center;
+  }
+}
+
+/* Menú mobile hamburger*/
+
+@media (max-width: 920px) {
+  header::before {
+    content: "";
+    position: fixed;
+    top: -100px;
+    left: -100px;
+    width: 200px;
+  }
+
+  #menuCheck,
+  .menu-icon {
+    display: block;
+  }
+
+  .menu-icon {
+    color: #fff;
+    position: relative;
+    z-index: 2;
+  }
+
+  .menu-list {
+    position: fixed;
+    color: #fff;
+    left: 100%;
+    width: 150vh;
+    height: 150vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: top 1.1s, left 1.1s, transform 1.1s;
+    margin-top: -100px;
+  }
+
+  #menuCheck:checked ~ .menu-list {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .menu-list li {
+    text-transform: uppercase;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+
+    opacity: 0;
+    transition: opacity 1s;
+  }
+
+  #menuCheck:checked ~ .menu-list li {
+    opacity: 1;
+  }
+
+  .menu-icon {
+    position: fixed;
+    width: 100px;
+    height: 78px;
+    border-radius: 50px;
+    font-size: 35px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  label .fa-bars,
+  #menuCheck:checked ~ label .fa-times {
+    display: block;
+  }
+
+  label .fa-times,
+  #menuCheck:checked ~ label .fa-bars {
+    display: none;
   }
 }
