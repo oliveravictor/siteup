@@ -635,6 +635,16 @@ footer button:hover {
   color: #dd4848;
 }
 
+.copyright {
+  background: #031116;
+  color: whitesmoke;
+  height: 50px;
+  font-family: sans-serif;
+  font-size: 20px;
+  text-align: center;
+  padding: 18px 0;
+}
+
 /* Other media queries */
 
 @media only screen and (min-width: 320px) and (max-width: 1220px) {
