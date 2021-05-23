@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 li,
 a {
   list-style: none;
@@ -37,10 +41,16 @@ header ul li a {
   text-transform: uppercase;
   font-family: "RocknRoll One", sans-serif;
   font-size: 17px;
+  padding: 0px 2px;
 }
 
 a:hover {
-  border-bottom: 2px solid #fbe0c4;
+  background: #c5a880;
+  transform: scale(50%, 50%);
+  transition: 0.5s;
+  padding: 3px 3px;
+  border-radius: 10px;
+  color: #1b1a17;
 }
 
 .menu {
@@ -871,6 +881,11 @@ footer button:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+
+  .menu-list:active ~ a {
+    display: none;
+    background: none;
   }
 
   .menu-list li {
