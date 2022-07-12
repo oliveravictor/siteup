@@ -273,6 +273,11 @@ p {
   transition: all 0.3s;
 }
 
+.subtitle {
+  font-size: 30px;
+  padding-top: 3rem;
+}
+
 @media screen and (max-width: 992px) {
   .blog-slider {
     max-width: 680px;
